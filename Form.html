@@ -1,0 +1,48 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Form</title>
+    <link rel="stylesheet" href="Form.css">
+</head>
+
+<body>
+    <header>
+        <h1>Job Application Form</h1>
+        <form action="message.html" method="post">
+            <label for="applicant-name">FULL NAME: </label>
+            <input type="text" id="applicant-name" name="applicant-name" required placeholder="Enter your Full Name" title="Name cannot be empty or contain only spaces.">
+
+            <label for="applicant-email">Email:</label>
+            <input type="email" id="applicant-email" name="applicant-email" required placeholder="Your email" title="Please enter a valid email address. This field is required.">
+
+            <label for="applicant-phone">Phone:</label>
+            <input type="tel" id="applicant-phone" name="applicant-phone" required pattern="[0-9]{10}" placeholder="Your Phone number" title="Please enter a 10-digit phone number.">
+
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required title="Please select your gender.">
+                <option value="">--Select gender--</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required title="Please select your date of birth.">
+
+            <label for="resume">Upload Resume:</label>
+            <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required title="Please upload your resume in PDF, DOC, or DOCX format.">
+
+            <label for="cover-letter">Cover Letter:</label>
+            <textarea id="cover-letter" name="cover-letter" rows="5" placeholder="Write a Short Cover letter" title="Please write a brief cover letter."></textarea>
+
+            <button type="submit">Apply</button>
+        </form>
+    </header>
+</body>
+
+</html>
